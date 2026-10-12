@@ -1,0 +1,14 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@1,500;1,600;1,700&display=swap');
+@theme {
+  --font-serif: 'Anton', Impact, sans-serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --color-ink: #0b1b33;
+  --color-gold: #c9a45c;
+}
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { font-family: var(--font-sans); color: #0b1b33; background: #fff; -webkit-font-smoothing: antialiased; }
+  h1, h2, h3 { font-family: 'Anton', Impact, sans-serif; font-weight: 400; text-transform: uppercase; letter-spacing: .015em; }
+  button, a { -webkit-tap-highlight-color: transparent; }
+}

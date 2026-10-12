@@ -1,0 +1,6 @@
+{
+  "name": "Be Smart Coaching Center",
+  "description": "Official portal for Be Smart Coaching Center Pvt. Ltd., Janakpurdham, Dhanusha, Nepal. Coaching programs, course admissions, student portal, notices, and test preparation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
