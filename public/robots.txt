@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mrsky3155-eng.github.io/Be-smart-coaching-center/sitemap.xml

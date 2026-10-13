@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@1,500;1,600;1,700&display=swap');
+@import "tailwindcss";
+@theme {
+  --font-serif: 'Anton', Impact, sans-serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --color-ink: #0b1b33;
+  --color-gold: #c9a45c;
+}
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { font-family: var(--font-sans); color: #0b1b33; background: #fff; -webkit-font-smoothing: antialiased; }
+  h1, h2, h3 { font-family: 'Anton', Impact, sans-serif; font-weight: 400; text-transform: uppercase; letter-spacing: .015em; }
+  button, a { -webkit-tap-highlight-color: transparent; }
+}
+
+
+/* Responsive safety net for small phones and tablets. */
+@layer base {
+  *, *::before, *::after { box-sizing: border-box; }
+  html { width: 100%; max-width: 100%; overflow-x: clip; scroll-padding-top: 5rem; }
+  body { width: 100%; max-width: 100%; min-width: 320px; margin: 0; overflow-x: clip; }
+  #root { width: 100%; min-height: 100vh; overflow-x: clip; }
+  img, video, iframe, canvas, svg { max-width: 100%; }
+  img { height: auto; }
+  button, input, select, textarea { font: inherit; }
+  a, button { touch-action: manipulation; }
+  section[id] { scroll-margin-top: 5rem; }
+}
+
+@media (max-width: 640px) {
+  h1 { overflow-wrap: anywhere; }
+  h2 { font-size: clamp(1.85rem, 8vw, 2.5rem); line-height: 1.08; }
+  p, li { overflow-wrap: anywhere; }
+  button { min-height: 44px; }
+  iframe { display: block; width: 100%; }
+}
+
+@media (max-width: 380px) {
+  .mobile-compact { padding-left: 0.875rem; padding-right: 0.875rem; }
+}
